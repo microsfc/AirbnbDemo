@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D2C405B2B0B5DAD00D144FE /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2C405A2B0B5DAD00D144FE /* DestinationSearchView.swift */; };
+		4D3528212B2A9C3800181F28 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3528202B2A9C3800181F28 /* ProfileView.swift */; };
+		4D3528232B2AA06500181F28 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3528222B2AA06500181F28 /* ProfileOptionRowView.swift */; };
+		4D3528252B2AA44C00181F28 /* WhishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3528242B2AA44C00181F28 /* WhishListView.swift */; };
+		4D3528272B2AF0C800181F28 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3528262B2AF0C800181F28 /* MainTabView.swift */; };
+		4D35282A2B2AFBF200181F28 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3528292B2AFBF200181F28 /* SwiftyJSON */; };
 		4DFADD4F2B070838000D853A /* AirbnbDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFADD4E2B070838000D853A /* AirbnbDemoApp.swift */; };
 		4DFADD512B070838000D853A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFADD502B070838000D853A /* ContentView.swift */; };
 		4DFADD532B07083A000D853A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFADD522B07083A000D853A /* Assets.xcassets */; };
@@ -41,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		4D2C405A2B0B5DAD00D144FE /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
+		4D3528202B2A9C3800181F28 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4D3528222B2AA06500181F28 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		4D3528242B2AA44C00181F28 /* WhishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishListView.swift; sourceTree = "<group>"; };
+		4D3528262B2AF0C800181F28 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4DFADD4B2B070838000D853A /* AirbnbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFADD4E2B070838000D853A /* AirbnbDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbDemoApp.swift; sourceTree = "<group>"; };
 		4DFADD502B070838000D853A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D35282A2B2AFBF200181F28 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +225,8 @@
 		4DFADD832B070A80000D853A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4D3528202B2A9C3800181F28 /* ProfileView.swift */,
+				4D3528222B2AA06500181F28 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -229,6 +241,7 @@
 		4DFADD852B070AB0000D853A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				4D3528262B2AF0C800181F28 /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -236,6 +249,7 @@
 		4DFADD862B070ABC000D853A /* Wishlists */ = {
 			isa = PBXGroup;
 			children = (
+				4D3528242B2AA44C00181F28 /* WhishListView.swift */,
 			);
 			path = Wishlists;
 			sourceTree = "<group>";
@@ -265,6 +279,9 @@
 			dependencies = (
 			);
 			name = AirbnbDemo;
+			packageProductDependencies = (
+				4D3528292B2AFBF200181F28 /* SwiftyJSON */,
+			);
 			productName = AirbnbDemo;
 			productReference = 4DFADD4B2B070838000D853A /* AirbnbDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +354,9 @@
 				Base,
 			);
 			mainGroup = 4DFADD422B070838000D853A;
+			packageReferences = (
+				4D3528282B2AFBF200181F28 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 4DFADD4C2B070838000D853A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,13 +400,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFADD992B074AB4000D853A /* ListingImageCarouselView.swift in Sources */,
+				4D3528212B2A9C3800181F28 /* ProfileView.swift in Sources */,
+				4D3528232B2AA06500181F28 /* ProfileOptionRowView.swift in Sources */,
 				4D2C405B2B0B5DAD00D144FE /* DestinationSearchView.swift in Sources */,
 				4DFADD512B070838000D853A /* ContentView.swift in Sources */,
 				4DFADD8C2B070FCD000D853A /* ListingItemView.swift in Sources */,
 				4DFADD912B073AFA000D853A /* ExploreView.swift in Sources */,
+				4D3528252B2AA44C00181F28 /* WhishListView.swift in Sources */,
 				4DFADD932B073DC9000D853A /* SearchAndFilterBar.swift in Sources */,
 				4DFADD962B07497E000D853A /* ListingDetailView.swift in Sources */,
 				4DFADD4F2B070838000D853A /* AirbnbDemoApp.swift in Sources */,
+				4D3528272B2AF0C800181F28 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +740,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D3528282B2AFBF200181F28 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D3528292B2AFBF200181F28 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D3528282B2AFBF200181F28 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DFADD432B070838000D853A /* Project object */;
 }

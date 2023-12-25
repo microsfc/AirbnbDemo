@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import SwiftyJSON
 
 struct ListingDetailView: View {
     var images = [
@@ -21,7 +22,7 @@ struct ListingDetailView: View {
     
     var body: some View {
         ScrollView {
-            ZStack (alignment: .topLeading){
+            ZStack (alignment: .topLeading) {
                 ListingImageCarouselView()
                     .frame(height: 320)
                 
@@ -170,6 +171,7 @@ struct ListingDetailView: View {
             }
             .padding()
         }
+        .toolbar(.hidden, for: .tabBar)
         .ignoresSafeArea()
         .padding(.bottom, 64)
         .overlay(alignment: .bottom) {
